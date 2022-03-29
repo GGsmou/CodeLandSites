@@ -14,8 +14,16 @@
 <body>
 
 <div id="mySidebar" class="sidebar">
-	<h1>Codeland Map</h1>
-	<center>	
+	<center>
+		<h1>Codeland Map</h1>
+		<hr>
+		<button class="side" onclick="ResColour()">Страны - Цвета</button>
+		<button class="side" onclick="ResFlag()">Страны - Флаги</button>
+		<button class="side" onclick="CityColour()">Города - Цвета</button>
+		<button class="side" onclick="CityFlag()">Города - Флаги</button>
+		<hr>
+
+		<hr>
 		<!--mesto.zp.ua-->
 		<a href="http://mesto.zp.ua/"><img src="http://ad.mesto.zp.ua/img.gif" border=0 width=88 height=31 alt="Регистрация доменов, хостинг"></a>
 		<!--/mesto.zp.ua-->
@@ -45,6 +53,19 @@
 			document.getElementById("openbtn").innerText = "×"
 			open = true;
 		}
+	}
+
+	function ResColour(){
+		document.getElementById('map').src="main/img/maps/Страны - цвета.svg";
+	}
+	function ResFlag(){
+		document.getElementById('map').src="main/img/maps/Страны - флаги.svg";
+	}
+	function CityColour(){
+		document.getElementById('map').src="main/img/maps/Города - цвета.svg";
+	}
+	function CityFlag(){
+		document.getElementById('map').src="main/img/maps/Города - флаги.svg";
 	}
 </script>
 </body>

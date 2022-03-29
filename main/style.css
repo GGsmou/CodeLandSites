@@ -18,7 +18,7 @@
 body{
 	height: 100%;
 	width: 100%;
-	margin: 10;
+	margin: 0;
 	padding: 0;
 	background-color: #1B1A1F;
 	background-size: cover;
@@ -31,7 +31,6 @@ h1{
 	color: white;
 	font-size: 40px;
 	font-family: "Lobster", cursive;
-	margin: 2px 0px 10px 10px;
 }
 h3{
 	margin-top: 0;
@@ -45,7 +44,7 @@ h3{
 	text-align: center;
 	margin-top: 1px;
 	margin-bottom: 10px;
-	background-color: rgba(86, 84, 90, 0.5);
+	background-color: lightgray;
 	border-radius: 5px;
 	padding-top: 15px;
 }
@@ -85,7 +84,33 @@ h3{
 	padding: 16px;
 }
 #maps{
+	left: 0;
+	top: 0;
+}
+.side{
+	height: 40px;
+	width: 150px;
 	margin: 10px;
+	color: #1B1A1F;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .8em;
+	letter-spacing: 1.5px;
+	align-items: center;
+	justify-content: center;
+	background-color: #FDD80E;
+	transition: margin-left .5s;
+	cursor: pointer;
+	border: 0;
+}
+.side:hover{
+	background-color: #FFEB7B;
+}
+hr{
+	border: 2px solid lightgray;
+	width: 70%;
+	border-radius: 10px
+
 }
 /*----------------------------*/
 @media screen and (max-height: 450px)
