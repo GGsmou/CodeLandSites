@@ -12,29 +12,52 @@
 	<meta name="copyright" content="Made by GGsmou & Darud">
 </head>
 <body>
-	<center>
-		<header>
-			<div id="title">
-				<h1>Codeland</h1>
-				<h3>by sus</h3>
-			</div>	
-			<div id="social" align="justify">
-				<a href="https://www.instagram.com/svyat_golovin" target="_blank"><img src="main/img/Instagram-Logo.png" width="30px" alt=""></a>
-				<a href="https://opensea.io/collection/chsw" target="_blank"><img src="main/img/OpenSea-Logo.png" width="30px" alt=""></a>
-				<a href="https://discord.gg/k445e4uSFf" target="_blank"><img src="main/img/Discord-Logo.png" width="35px" alt=""></a>
-				<a href="https://www.youtube.com/channel/UCNJSflCc38h3aSz3zkBt5DA" target="_blank"><img src="main/img/YouTube-Logo.png" width="40px" alt=""></a>
-				<a href="https://www.twitch.tv/ggsmou" target="_blank"><img src="main/img/Twitch-Logo.png" width="30px" alt=""></a>
-				<a href="https://www.tiktok.com/@ggsmou?" target="_blank"><img src="main/img/TikTok-Logo.png" width="30px" alt=""></a>
-			</div>	
-		</header>
-		<main align="justify">
-		    	<a href="https://chsw.pp.ua/chswpedia/"><div class="pic"><img src="main/img/sites/chswpedia.png"></div></a>
-		    	<a href="https://chsw.pp.ua/timer/"><div class="pic" ><img src="main/img/sites/timer.png"></div></a>
-		    	<a href="https://chsw.pp.ua/code/"><div class="pic" ><img src="main/img/sites/code.png"></div></a>
-		</main>
-		<!--mesto.zp.ua-->
-		<a href="http://mesto.zp.ua/"><img src="http://ad.mesto.zp.ua/img.gif" border=0 width=88 height=31 alt="Регистрация доменов, хостинг"></a>
-		<!--/mesto.zp.ua-->
-	</center>
+
+<div id="mySidebar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	<h1>Codeland Map</h1>
+
+	<a href="#">About</a>
+	<a href="#">Services</a>
+	<a href="#">Clients</a>
+	<a href="#">Contact</a>
+	<!--mesto.zp.ua-->
+	<a href="http://mesto.zp.ua/"><img src="http://ad.mesto.zp.ua/img.gif" border=0 width=88 height=31 alt="Регистрация доменов, хостинг"></a>
+	<!--/mesto.zp.ua-->
+</div>
+
+<div id="main">
+	<button class="openbtn" onclick="Nav()">+</button>  
+</div>
+
+<div id="map"></div>
+
+<script>
+	var open = true
+
+	function openNav() {
+		document.getElementById("mySidebar").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidebar").style.width = "0";
+		document.getElementById("main").style.marginLeft= "0";
+	}
+
+	function Nav(){
+		if(open){
+			document.getElementById("mySidebar").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+			open = false;
+		}
+		else{
+			document.getElementById("mySidebar").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+			open = true;
+		}
+	}
+</script>
+  
 </body>
 </html>
