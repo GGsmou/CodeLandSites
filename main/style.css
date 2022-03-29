@@ -84,7 +84,9 @@ h3{
 	transition: margin-left .5s;
 	padding: 16px;
 }
-
+#maps{
+	margin: 10px;
+}
 /*----------------------------*/
 @media screen and (max-height: 450px)
 {
