@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codeland.pp.ua/sitemap.xml
