@@ -39,6 +39,11 @@ h3{
 	font-size: 20px;
 	font-family: "Lobster", cursive;
 }
+h2{
+	margin: 0px;
+	color: lightgray;
+	font-size: 30px;
+}
 #social{
 	height: 50px;
 	width: 70%;
@@ -55,7 +60,7 @@ h3{
 }
 .sidebar{
 	height: 100%;
-	width: 350px;
+	width: 355px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -64,6 +69,7 @@ h3{
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 1px;
+	overflow-y: scroll;
 }
 #openbtn{
 	font-size: 20px;
@@ -80,7 +86,7 @@ h3{
 #open{
 	position: fixed;
 	z-index: 1;
-	margin-left: 350px;
+	margin-left: 355px;
 	transition: margin-left .5s;
 	padding: 16px;
 }
@@ -109,9 +115,13 @@ h3{
 }
 hr{
 	border: 2px solid lightgray;
+	width: 90%;
+	border-radius: 10px
+}
+.hr-small{
+	border: 1px solid lightgray;
 	width: 70%;
 	border-radius: 10px
-
 }
 table{
 	font-size: 20px;
@@ -124,6 +134,8 @@ table{
 #flag-sqr{
 	width: 50px;
 	height: 50px;
+	background-size: cover;
+	background-position: center;
 }
 /*----------------------------*/
 @media screen and (max-height: 450px)
