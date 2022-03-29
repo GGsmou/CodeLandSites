@@ -31,12 +31,13 @@ h1{
 	color: white;
 	font-size: 40px;
 	font-family: "Lobster", cursive;
+	margin-bottom: 1px;
 }
 h3{
-	margin-top: 0;
-	color: white;
+	margin-top: 1px;
+	color: lightgray;
 	font-size: 20px;
-	text-shadow: 1px -1px 0 #000, 2px 2px 2px rgba(0,0,0,1);
+	font-family: "Lobster", cursive;
 }
 #social{
 	height: 50px;
@@ -54,7 +55,7 @@ h3{
 }
 .sidebar{
 	height: 100%;
-	width: 250px;
+	width: 350px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -79,7 +80,7 @@ h3{
 #open{
 	position: fixed;
 	z-index: 1;
-	margin-left: 250px;
+	margin-left: 350px;
 	transition: margin-left .5s;
 	padding: 16px;
 }
@@ -111,6 +112,18 @@ hr{
 	width: 70%;
 	border-radius: 10px
 
+}
+table{
+	font-size: 20px;
+	color: lightgray;
+}
+#colour-sqr{
+	width: 20px;
+	height: 20px;
+}
+#flag-sqr{
+	width: 50px;
+	height: 50px;
 }
 /*----------------------------*/
 @media screen and (max-height: 450px)

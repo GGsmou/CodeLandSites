@@ -16,13 +16,29 @@
 <div id="mySidebar" class="sidebar">
 	<center>
 		<h1>Codeland Map</h1>
+		<h3>29.03.22 || 23:53</h3>
 		<hr>
 		<button class="side" onclick="ResColour()">Страны - Цвета</button>
 		<button class="side" onclick="ResFlag()">Страны - Флаги</button>
 		<button class="side" onclick="CityColour()">Города - Цвета</button>
 		<button class="side" onclick="CityFlag()">Города - Флаги</button>
 		<hr>
-
+		<table>
+			<tbody>
+				<tr>
+					<td>Страна:</td>
+					<td>Codeland</td>
+				</tr>
+				<tr>
+					<td>Цвет:</td>
+			    	<td><div id="colour-sqr" style="background-color: #FCC02A"></div></td>
+		    	</tr>
+				<tr>
+					<td>Флаг:</td>
+					<td><div id="flag-sqr" style="background-color: #FCC02A"></div></td>
+				</tr>
+		  </tbody>
+		</table>
 		<hr>
 		<!--mesto.zp.ua-->
 		<a href="http://mesto.zp.ua/"><img src="http://ad.mesto.zp.ua/img.gif" border=0 width=88 height=31 alt="Регистрация доменов, хостинг"></a>
@@ -48,8 +64,8 @@
 			open = false;
 		}
 		else{
-			document.getElementById("mySidebar").style.width = "250px";
-			document.getElementById("open").style.marginLeft = "250px";
+			document.getElementById("mySidebar").style.width = "350px";
+			document.getElementById("open").style.marginLeft = "350px";
 			document.getElementById("openbtn").innerText = "×"
 			open = true;
 		}
