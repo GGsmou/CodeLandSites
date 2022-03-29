@@ -29,10 +29,9 @@ body{
 }
 h1{
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
 	font-family: "Lobster", cursive;
-	padding-left: 5px;
-	padding-right: 5px;
+	margin: 2px 0px 10px 10px;
 }
 h3{
 	margin-top: 0;
@@ -41,8 +40,14 @@ h3{
 	text-shadow: 1px -1px 0 #000, 2px 2px 2px rgba(0,0,0,1);
 }
 #social{
+	height: 50px;
+	width: 70%;
 	text-align: center;
-	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(86, 84, 90, 0.5);
+	border-radius: 5px;
+	
 }
 #social a{
 	padding-left: 5px;
@@ -55,30 +60,12 @@ h3{
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #111;
+	background-color: rgba(0, 0, 0, 0.5);
 	overflow-x: hidden;
 	transition: 0.5s;
-	padding-top: 8px;
+	padding-top: 1px;
 }
-.sidebar a{
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #56545A;
-	display: block;
-	transition: 0.3s;
-}
-.sidebar a:hover {
-	color: #f1f1f1;
-}
-.sidebar .closebtn{
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-}
-.openbtn{
+#openbtn{
 	font-size: 20px;
 	cursor: pointer;
 	background-color: #FDD80E;
@@ -87,10 +74,10 @@ h3{
 	border: none;
 	transition: 0.3s
 }
-.openbtn:hover{
+#openbtn:hover{
 	background-color: #FFEB7B;
 }
-#main{
+#open{
 	margin-left: 250px;
 	transition: margin-left .5s;
 	padding: 16px;
