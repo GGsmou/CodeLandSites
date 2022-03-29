@@ -78,7 +78,7 @@ h2{
 	color: #1B1A1F;
 	padding: 10px 15px;
 	border: none;
-	transition: 0.3s
+	transition: 0.3s;
 }
 #openbtn:hover{
 	background-color: #FFEB7B;
@@ -106,9 +106,9 @@ h2{
 	align-items: center;
 	justify-content: center;
 	background-color: #FDD80E;
-	transition: margin-left .5s;
 	cursor: pointer;
 	border: 0;
+	transition: 0.3s;
 }
 .side:hover{
 	background-color: #FFEB7B;
