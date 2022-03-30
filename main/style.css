@@ -80,9 +80,17 @@ h4{
 	transition: margin-left .5s;
 	padding: 16px;
 }
-#maps{
-	left: 0;
+#map-cords{
 	top: 0;
+	left: 0;
+	position: relative;
+}
+#maps{
+	top: 0;
+	left: 0;
+}
+#cords{
+	position: absolute;
 }
 #cords-lines{
 	z-index: 1;

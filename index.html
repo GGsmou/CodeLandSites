@@ -22,6 +22,7 @@
 		<button class="side" onclick="ResFlag()">Страны - Флаги</button>
 		<button class="side" onclick="CityColour()">Города - Цвета</button>
 		<button class="side" onclick="CityFlag()">Города - Флаги</button>
+		<button id="cords-on-of" class="side" onclick="Cords()">Вкл координаты</button>
 		<hr>
 		<h2>Страны</h2>
 		<table>
@@ -97,15 +98,13 @@
 </div>
 
 <div id="open"><button id="openbtn" onclick="Nav()">×</button></div>
-<div id="maps">
-	<img src="main/img/maps/Страны - цвета.svg" alt="" id="map">
-	<img src="main/img/maps/cord/filler.png" alt="" id="cords-lines">
-	<img src="main/img/maps/cord/filler.png" alt="" id="cords-top">
-	<img src="main/img/maps/cord/filler.png" alt="" id="cords-side">
-</div>
+<div id="map-cord"><img src="main/img/maps/cord/filler.png" alt="" id="cords"></div>
+<div id="maps"><img src="main/img/maps/Страны - цвета.svg" alt="" id="map"></div>
+
 
 <script>
 	var open = true
+	var cords = false
 
 	function Nav(){
 		if(open){
@@ -133,6 +132,19 @@
 	}
 	function CityFlag(){
 		document.getElementById('map').src="main/img/maps/Города - флаги.svg";
+	}
+
+	function Cords(){
+		if(cords){
+			document.getElementById("cords-on-of").innerText = "Вкл координаты";
+			document.getElementById("cords").src="main/img/maps/cord/filler.png";
+			cords = false;
+		}
+		else{
+			document.getElementById("cords-on-of").innerText = "Выкл координаты";
+			document.getElementById("cords").src="main/img/maps/cord/Cords.svg";
+			cords = true;
+		}
 	}
 </script>
 </body>
