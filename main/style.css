@@ -16,7 +16,6 @@
 	background: transparent;
 }
 body{
-	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -51,7 +50,6 @@ h4{
 	margin-bottom: 5px;
 }
 .sidebar{
-	height: 100%;
 	width: 355px;
 	position: fixed;
 	z-index: 1;
