@@ -51,7 +51,7 @@ h4{
 }
 .sidebar{
 	width: 355px;
-	position: fixed;
+	position: absolute;
 	z-index: 3;
 	top: 0;
 	left: 0;
