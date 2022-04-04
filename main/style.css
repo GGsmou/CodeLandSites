@@ -49,6 +49,9 @@ h4{
 	font-size: 20px;
 	margin-bottom: 5px;
 }
+a{
+	color: lightgray;
+}
 .sidebar{
 	width: 355px;
 	position: absolute;
